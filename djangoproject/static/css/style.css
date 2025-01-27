@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: black;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    display: flex;
+    flex-flow: column;
+    
+}
+
+nav {
+    padding: 1rem;
+    background-image: linear-gradient(to right,rgba(188, 143, 143, 0.395), rgba(255, 0, 0, 0.132));
+    color: white;
+    font-size: 2.5rem;
+}
+
+main {
+    padding: 1rem;
+}
+
+h1,p {
+    text-align: left;
+    padding-block: 0.5rem;
+}
+
+nav a {
+    color: #855e44;
+}
+
+a {
+    text-decoration: none;
+    color: #81dbb8;
+}
+
+a:hover {
+    opacity: .85;
+}
+
+.active {
+    background-color: bisque;
+    border-radius: 10px 10px 10px 10px;
+    padding: 5px;
+}
+
+.banner {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* ERROR MESSAGES */
+
+.helptext {
+    font-size: 0.5rem;
+    margin-left: 1rem;
+}
+.helptext:hover {
+    font-size: 1rem;
+}
+
+.helptext ul {
+    list-style-type: none;
+}
+
+.errorlist {
+    color: #F00;
+    margin-left: 2rem;
+}
+
+.errorlist li::marker {
+    content: '🚨 ';
+}
+
+
+
+/* FORMS */
+.container{   
+    background-color: rgba(255, 228, 196, 0.03);
+    /* background-image: url(C:\Users\user\Documents\DJANGO\djangoproject\media\form-background.jpg); */
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    min-width: 300px;
+    min-block-size: 300px;
+    max-width: fit-content;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.left-of-form {
+    background-image: linear-gradient(to right,rgba(188, 143, 143, 0.395), rgba(255, 0, 0, 0.132));
+    border-radius: 10px 0 0 10px; 
+    padding: 0.5rem;
+}
+
+form.form-with-validation {
+    background-color: rgba(255, 0, 68, 0.346);
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;    
+    min-height: 300px;
+    height: fit-content;
+    padding: 1rem;
+}
+
+.form-with-validation.new-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.form-submit {
+    background-color: rgb(251, 59, 59);
+    border-radius: 50px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin: 0.5rem;
+    min-width: 100px;
+    padding: 0.5rem;
+    width: fit-content;
+
+}
+
+label {
+    color: whitesmoke;
+}
+
+input {
+    border-bottom: 3px solid rgb(0, 0, 0);
+    opacity: 0.1;
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 0.25rem;
+}
+input:hover {
+    opacity: 0.3;
+}
+
+textarea {
+    border-bottom: 3px solid rgb(0, 0, 0);
+    opacity: 0.1;
+    width: 300px;
+    height: 100px;
+}
+textarea:hover {
+    opacity: 0.3;
+}
