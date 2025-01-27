@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Register a new user
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="left-of-form">
+        <h2>Login instead?</h2>
+        <a href="{% url 'users:login' %}">Login</a>
+    </div>
+    <form class="form-with-validation" action="{% url 'users:register' %}" method="post">
+        <h2>Sign up</h2>
+        {% csrf_token %}
+        {{ form }}
+        <button class="form-submit"
+        {% comment %} by default the button is type submit {% endcomment %} type="submit">
+        Register
+        </button>
+    </form>
+</div>
+{% endblock %}
